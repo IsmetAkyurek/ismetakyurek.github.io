@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="42px" viewBox="0 0 124 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FC2C60" offset="0%"></stop>
+            <stop stop-color="#F52558" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#F52558" offset="0%"></stop>
+            <stop stop-color="#EE1E50" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#EE1E50" offset="0%"></stop>
+            <stop stop-color="#E71748" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#E61647" offset="0%"></stop>
+            <stop stop-color="#E01040" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#E01040" offset="0%"></stop>
+            <stop stop-color="#DA0A39" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.834037162%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#D90938" offset="0%"></stop>
+            <stop stop-color="#D20230" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill-rule="nonzero">
+            <circle id="Oval" fill="url(#linearGradient-1)" cx="10.5" cy="31.5" r="10.5"></circle>
+            <circle id="Oval" fill="url(#linearGradient-2)" cx="31" cy="10.5" r="10.5"></circle>
+            <circle id="Oval" fill="url(#linearGradient-3)" cx="51.5" cy="31.5" r="10.5"></circle>
+            <circle id="Oval" fill="url(#linearGradient-4)" cx="72.5" cy="10.5" r="10.5"></circle>
+            <circle id="Oval" fill="url(#linearGradient-5)" cx="92.5" cy="31.5" r="10.5"></circle>
+            <circle id="Oval" fill="url(#linearGradient-6)" cx="113.5" cy="10.5" r="10.5"></circle>
+        </g>
+    </g>
+</svg>
