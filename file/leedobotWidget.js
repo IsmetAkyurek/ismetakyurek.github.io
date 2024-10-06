@@ -445,10 +445,7 @@ function createPage() {
     avatar: window.leedobotData.botAvatarImageUrl ? window.leedobotData.botAvatarImageUrl : "",
     subTitleText: window.leedobotData.subTitleText ? window.leedobotData.subTitleText.replace(/\n/g, "<br>") : "",
     initialMessages: window.leedobotData.initialMessage
-      ? `[${window.leedobotData.initialMessage
-          .split(/\n/)
-          .map((x) => `"${x.trim()}"`)
-          .join(",")}]`
+      ? window.leedobotData.initialMessage.split(/\n/).map((x) => x.trim())
       : [],
   };
 
@@ -477,24 +474,6 @@ function createPage() {
   <div>
     <div id="ChatbotAssistant"></div>
   </div>
-  <script id="chatbot-settings" type="application/json">
-    {
-      "botId": "${appSettings.botId}",
-      "startIntentId: "${appSettings.intentId}",
-      "searchIntent": ${appSettings.searchIntent},
-      "queryParameters": true,
-      "initialMessages": ${appSettings.initialMessages},
-      "theme": {
-        "hideTime": true,
-        "hideHeader": true,
-        "scrollMode": "body",
-        "windowNumber": "__phoneNumber",
-        "container": "ChatbotAssistant",
-        "defaultAvatar": "${appSettings.avatar}"
-        "staticNumber": "${appSettings.phoneNumber}",
-      }
-    }
-  </script>
   `;
 
   const scriptElement = document.querySelector('script[id="LeedobotWidget"]');
@@ -502,6 +481,29 @@ function createPage() {
     scriptElement.insertAdjacentElement("afterend", htmlElement);
   }
 
+  /** Create Chatbot Settings */
+  const chatbotSettingsElement = document.createElement("script");
+  chatbotSettingsElement.id = "chatbot-settings";
+  chatbotSettingsElement.type = "application/json";
+  chatbotSettingsElement.innerHTML = JSON.stringify({
+    botId: appSettings.botId,
+    startIntentId: appSettings.intentId,
+    searchIntent: appSettings.searchIntent,
+    queryParameters: true,
+    initialMessages: appSettings.initialMessages,
+    theme: {
+      hideTime: true,
+      hideHeader: true,
+      scrollMode: "body",
+      windowNumber: "__phoneNumber",
+      container: "ChatbotAssistant",
+      defaultAvatar: appSettings.avatar,
+      staticNumber: appSettings.phoneNumber,
+    },
+  });
+  document.body.appendChild(chatbotSettingsElement);
+
+  /** Create Chatbot Script */
   const chatbotElement = document.createElement("script");
   chatbotElement.id = "chatbot-script";
   chatbotElement.type = "text/javascript";
