@@ -443,7 +443,7 @@ function createPage() {
     phoneNumber: window.leedobotData.phoneNumber ? window.leedobotData.phoneNumber : "",
     avatarName: window.leedobotData.botAvatarName ? window.leedobotData.botAvatarName : "",
     avatar: window.leedobotData.botAvatarImageUrl ? window.leedobotData.botAvatarImageUrl : "",
-    subTitleText: window.leedobotData.subTitleText ? window.leedobotData.subTitleText.replace(/\n/g, "<br>") : "",
+    subTitleText: window.leedobotData.subtitleText ? window.leedobotData.subtitleText.replace(/\n/g, "<br>") : "",
     initialMessages: window.leedobotData.initialMessage
       ? window.leedobotData.initialMessage.split(/\n/).map((x) => x.trim())
       : [],
